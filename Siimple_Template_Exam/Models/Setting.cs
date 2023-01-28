@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Siimple_Template_Exam.Bases;
+using System.ComponentModel.DataAnnotations;
 
 namespace Siimple_Template_Exam.Models
 {
-    public class Setting
+    public class Setting : BaseEntity
     {
-        public int Id { get; set; }
+        //Basliq hissede logo yox yazi oldugu ucun qeyd etmedim
         [StringLength(maximumLength:50)]
         public string? Key { get; set; }
         [StringLength(maximumLength: 50)]
