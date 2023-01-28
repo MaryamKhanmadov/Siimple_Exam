@@ -18,10 +18,11 @@ namespace Siimple_Template_Exam.Areas.Manage.Controllers
             _dataContext = dataContext;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page =1)
         {
-            List<Card> cards = _dataContext.Cards.ToList();
-            return View(cards);
+            var query = _dataContext.Cards.AsQueryable();
+            var paginated = PaginatedList<Card>.Create(query, 2, page);
+            return View(paginated);
         }
         public IActionResult Create()
         {

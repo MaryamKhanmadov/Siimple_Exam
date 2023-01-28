@@ -1,6 +1,6 @@
-﻿@model List<Card>
+﻿@model PaginatedList<Card>
 @{
-    int count = 0;
+    int count = ((Model.ActivePage - 1) * 2);
 }
 <div class="container">
     <h1 style="color:blue"><b>Card : </b></h1>
@@ -37,3 +37,26 @@
         </tbody>
     </table>
 </div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        @if (Model.HasPrevious)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-route-page="@(Model.ActivePage-1)">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPageCount; i++)
+        {
+            <li class="page-item @(Model.ActivePage==i?"active":"")"><a asp-route-page="@i" class="page-link">@i</a></li>
+        }
+
+        @if (Model.HasNext)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-route-page="@(Model.ActivePage+1)">Next</a>
+            </li>
+        }
+    </ul>
+</nav>

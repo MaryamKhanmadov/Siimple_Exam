@@ -2,20 +2,20 @@
 {
     public class PaginatedList<T> :List<T>
     {
-        public PaginatedList(PaginatedList<T> values , int count , int pagesize , int activepage)
+        public PaginatedList(List<T> values , int count , int pagesize , int activepage)
         {
             AddRange(values);
-            ActivePageCount = activepage;
+            ActivePage = activepage;
             TotalPageCount = (int)Math.Ceiling((double)count / pagesize);
         }
         public int TotalPageCount { get; set; }
-        public int ActivePageCount { get; set; }
-        public bool HasNext { get => ActivePageCount<TotalPageCount; }
-        public bool HasPrevious { get => ActivePageCount > 1 ; }
+        public int ActivePage { get; set; }
+        public bool HasNext { get => ActivePage<TotalPageCount; }
+        public bool HasPrevious { get => ActivePage > 1 ; }
 
-        //public PaginatedList<T> Create(IQueryable<T> values , int pagesize,int activepage)
-        //{
-        //    return new PaginatedList<T>(values.Skip())
-        //}
+        public static PaginatedList<T> Create(IQueryable<T> values, int pagesize, int activepage)
+        {
+            return new PaginatedList<T>(values.Skip((activepage - 1) * pagesize).Take(pagesize).ToList(), values.Count(), pagesize, activepage);
+        }
     }
 }

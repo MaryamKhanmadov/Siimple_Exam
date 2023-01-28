@@ -17,10 +17,11 @@ namespace Siimple_Template_Exam.Areas.Manage.Controllers
         {
             _dataContext = dataContext;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page =1)
         {
-            List<Setting> settingList = _dataContext.Settings.ToList();
-            return View(settingList);
+            var query = _dataContext.Settings.AsQueryable();
+            var paginated = PaginatedList<Setting>.Create(query, 2, page);
+            return View(paginated);
         }
         public IActionResult Update(int id)
         {
