@@ -1,0 +1,26 @@
+﻿@model Card
+
+<div class="container">
+    <h1 style="color:blue"><b>Update Card : </b></h1>
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" placeholder="Title">
+            <span asp-validation-for="Title" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Descreption" class="form-label">Descreption</label>
+            <textarea asp-for="Descreption" class="form-control" placeholder="Descreption"></textarea>
+            <span asp-validation-for="Descreption" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImageFile" class="form-label">ImageFile</label>
+            <input asp-for="ImageFile" class="form-control" placeholder="ImageFile">
+            <span asp-validation-for="ImageFile" style="color:red"></span>
+        </div>
+        <div class="mb-3">
+            <img src="~/uploads/card/@Model.ImageUrl" style="width:100px ; height:100px" />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
