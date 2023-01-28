@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oQhXAbKOTRM1x3Bd8PzykHkF33p+PlF172OkrXpOuHw=",
+  "Hash": "KSqkWKGA74C9ZSbkemSwmPL23TYNlpeHQptTVSAkJzo=",
   "Source": "Siimple_Template_Exam",
   "BasePath": "_content/Siimple_Template_Exam",
   "Mode": "Default",
@@ -32691,12 +32691,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\php-email-form\\validate.js"
     },
     {
-      "Identity": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\uploads\\card\\ef6d1156-c314-4bc6-9d17-a0f98f5e80d9why-us-3.jpg",
+      "Identity": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\uploads\\card\\0815237f-f16d-4359-a000-e879a0e50b51why-us-3.jpg",
       "SourceId": "Siimple_Template_Exam",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\",
       "BasePath": "_content/Siimple_Template_Exam",
-      "RelativePath": "uploads/card/ef6d1156-c314-4bc6-9d17-a0f98f5e80d9why-us-3.jpg",
+      "RelativePath": "uploads/card/0815237f-f16d-4359-a000-e879a0e50b51why-us-3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -32705,7 +32705,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\card\\ef6d1156-c314-4bc6-9d17-a0f98f5e80d9why-us-3.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\card\\0815237f-f16d-4359-a000-e879a0e50b51why-us-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\uploads\\card\\1cc5730b-f6f9-46f2-b215-65a0ab11424bwhy-us-1.jpg",
+      "SourceId": "Siimple_Template_Exam",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\",
+      "BasePath": "_content/Siimple_Template_Exam",
+      "RelativePath": "uploads/card/1cc5730b-f6f9-46f2-b215-65a0ab11424bwhy-us-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\card\\1cc5730b-f6f9-46f2-b215-65a0ab11424bwhy-us-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\uploads\\card\\f1c03435-c864-467a-bb9d-874757855380why-us-2.jpg",
+      "SourceId": "Siimple_Template_Exam",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maryamkhanmadov\\Desktop\\Siimple_Template_Exam\\Siimple_Template_Exam\\wwwroot\\",
+      "BasePath": "_content/Siimple_Template_Exam",
+      "RelativePath": "uploads/card/f1c03435-c864-467a-bb9d-874757855380why-us-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\card\\f1c03435-c864-467a-bb9d-874757855380why-us-2.jpg"
     }
   ]
 }

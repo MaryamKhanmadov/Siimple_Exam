@@ -68,7 +68,7 @@
                         <div class="card">
                             <img src="~/uploads/card/@item.ImageUrl" class="card-img-top" alt="...">
                             <div class="card-icon">
-                                <i class="bx bx-book-reader"></i>
+                                @Html.Raw(item.IconUrl)
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#">@item.Title</a></h5>

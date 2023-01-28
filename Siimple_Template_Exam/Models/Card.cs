@@ -12,6 +12,8 @@ namespace Siimple_Template_Exam.Models
         public string Descreption { get; set; }
         [StringLength(maximumLength: 100)]
         public string? ImageUrl { get; set; }
+        [StringLength(maximumLength: 100)]
+        public string IconUrl { get; set; }
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
     }

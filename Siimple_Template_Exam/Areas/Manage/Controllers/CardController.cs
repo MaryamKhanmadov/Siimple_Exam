@@ -83,6 +83,7 @@ namespace Siimple_Template_Exam.Areas.Manage.Controllers
             }
             existCard.Title = card.Title;
             existCard.Descreption = card.Descreption;
+            existCard.IconUrl = card.IconUrl;
 
             _dataContext.SaveChanges();
             return RedirectToAction("Index");
